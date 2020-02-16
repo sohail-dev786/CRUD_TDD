@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.view a
+{
+	font-size: 20px;
+	color:white;
+}
+
+tbody,thead,tr,td
+{
+	font-weight:bold;
+}
+
+.rounded-circlev, .rounded-circlee, .rounded-circled
+{
+	border-radius: 12px;
+	padding:5px;
+	letter-spacing:4px;
+	font-weight:bold;
+	
+}
+
+
+.edit a
+{
+	font-size: 20px;
+	color:white;
+}
+
+
+.delete a
+{
+	font-size: 20px;
+	color:white;
+}
+
+
+
