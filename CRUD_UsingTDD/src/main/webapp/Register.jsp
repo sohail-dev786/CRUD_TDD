@@ -78,10 +78,6 @@ padding:10px;
 </style>
 
 
-
-
-
-
 </head>
 <body>
 
@@ -111,7 +107,7 @@ padding:10px;
 					<div class="form-group">
 						<label for="addres">ADDRESS:</label> <input type="text"
 							class="form-control" placeholder="Enter Your Addres"
-							required="required" name="addres">
+							required="required" name="addre">
 					</div>	
 					<input type="submit" class="btn btn-primary btnregister" value="Enter"/>
 	

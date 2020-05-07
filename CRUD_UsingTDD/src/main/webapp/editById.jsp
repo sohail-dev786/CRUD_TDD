@@ -1,5 +1,6 @@
+<%@page import="com.learnning.crudtest.DB_Connection.DB_Connection"%>
 <%@page import="com.learnning.crudtest.models.UserModels"%>
-<%@page import="com.learnning.crudtest.DB_Connection"%>
+
 <%@page import="com.learnning.service.IDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -110,7 +111,7 @@ padding:10px;
 					<div class="form-group">
 						<label for="id">ID:</label> <input type="text" value="<%= model.getId() %>"
 							class="form-control" placeholder="Enter Your Id"
-							required="required" name="id">
+							required="required" name="id" readonly="readonly">
 					</div>
 
 					<div class="form-group">
@@ -128,7 +129,7 @@ padding:10px;
 					<div class="form-group">
 						<label for="addres">ADDRESS:</label> <input type="text" value="<%= model.getAddre() %>"
 							class="form-control" placeholder="Enter Your Addres"
-							required="required" name="addres">
+							required="required" name="addre">
 					</div>
 
 				<input type="submit" class="btn btn-primary btn-lg btnedit" value="Edit"/>

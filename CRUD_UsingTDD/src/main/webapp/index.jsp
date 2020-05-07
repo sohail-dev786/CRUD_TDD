@@ -1,6 +1,7 @@
+<%@page import="com.learnning.crudtest.DB_Connection.DB_Connection"%>
 <%@page import="com.learnning.crudtest.models.UserModels"%>
 <%@page import="java.util.List"%>
-<%@page import="com.learnning.crudtest.DB_Connection"%>
+
 <%@page import="com.learnning.service.IDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -146,10 +147,11 @@ font-size:40px;
 	</table>
 </div>
 	
+	
 	<%
 		}
 		else {
-			
+		
 			out.print("<a href='#'>ADD NEW</a>");
 		}
 	%>
@@ -159,14 +161,15 @@ font-size:40px;
 	function askConfirm(userId,userNm)
 	{
 				
-				var response=confirm("DO YOU WANT TO DELETE RECORD OF"+userNm+"!!!!");
+				var response=confirm("DO YOU WANT TO DELETE RECORD OF :\t "+userNm+"!!!!");
 					if(response)
 						{
 						
-						window.location="http://localhost:8091/CRUD_UsingTDD/deleteById.jsp?userId="+userId;
+						window.location="http://localhost:8080/CRUD_UsingTDD/deleteById.jsp?userId="+userId;
 						}
 	
 	}
+	
 	</script>
 
 	

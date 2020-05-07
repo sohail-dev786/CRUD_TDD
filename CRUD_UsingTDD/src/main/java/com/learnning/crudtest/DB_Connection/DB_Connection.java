@@ -1,4 +1,4 @@
-package com.learnning.crudtest;
+package com.learnning.crudtest.DB_Connection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -51,7 +51,7 @@ public class DB_Connection implements IDAO {
 					model.setId(resultset.getInt("id"));
 					model.setName(resultset.getString("name"));
 					model.setEmail(resultset.getString("email"));
-					model.setAddre(resultset.getString("Addres"));
+					model.setAddre(resultset.getString("Addre"));
 
 					users.add(model);
 				}
@@ -63,6 +63,8 @@ public class DB_Connection implements IDAO {
 		return users;
 	}
 
+	
+	
 	public UserModels getRecordsById(int i) {
 		if (getConnected()) {
 			String query = "select * from userdetails where id=?";
@@ -75,7 +77,7 @@ public class DB_Connection implements IDAO {
 					model.setId(resultset.getInt("id"));
 					model.setName(resultset.getString("name"));
 					model.setEmail(resultset.getString("email"));
-					model.setAddre(resultset.getString("Addres"));
+					model.setAddre(resultset.getString("Addre"));
 
 				}
 
@@ -255,7 +257,7 @@ public class DB_Connection implements IDAO {
 			System.out.println("Connection Successfully");
 			
 			  String query= "update USERDETAILS "
-					  		+ "set Name=? ,Email=?,Addres=? "
+					  		+ "set Name=? ,Email=?,Addre=? "
 					  		+ "where id=?" ;
 			  
 			  try {

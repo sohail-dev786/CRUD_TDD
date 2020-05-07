@@ -1,4 +1,5 @@
-<%@page import="com.learnning.crudtest.DB_Connection"%>
+
+<%@page import="com.learnning.crudtest.DB_Connection.DB_Connection"%>
 <%@page import="com.learnning.service.IDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -37,11 +38,12 @@
 
 	
 	<script type="text/javascript">
-	
+	console.log("inside deleted script");
 
 	alert("Record Delete Successfully !!!");
 	
-	location="http://localhost:8091/CRUD_UsingTDD/index.jsp";
+	location="http://localhost:8080/CRUD_UsingTDD/index.jsp";
+	
 	</script>
 
 <%	

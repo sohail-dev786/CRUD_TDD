@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.learnning.crudtest.DB_Connection;
+import com.learnning.crudtest.DB_Connection.DB_Connection;
 import com.learnning.crudtest.models.UserModels;
 import com.learnning.service.IDAO;
 
@@ -65,7 +65,7 @@ public class Process extends HttpServlet {
 	int uid=Integer.parseInt(request.getParameter("id"));
 	String uname=request.getParameter("name");
 	String uemail=request.getParameter("email");
-	String uaddres=request.getParameter("addres");
+	String uaddres=request.getParameter("addre");
 
 	models.setId(uid);
 	models.setName(uname);
@@ -76,13 +76,13 @@ public class Process extends HttpServlet {
 	if(mydao.insertingRecords(models))
 	{
 			
-		response.sendRedirect("http://localhost:8091/CRUD_UsingTDD/index.jsp");  
+		response.sendRedirect("http://localhost:8080/CRUD_UsingTDD/index.jsp");  
 
 	}
 	else
 	{
 		
-		response.sendRedirect("http://localhost:8091/CRUD_UsingTDD/Register.jsp");  
+		response.sendRedirect("http://localhost:8080/CRUD_UsingTDD/Register.jsp");  
     	
 	}
 		
@@ -99,7 +99,7 @@ public class Process extends HttpServlet {
 		int uid=Integer.parseInt(request.getParameter("id"));
 		String uname=request.getParameter("name");
 		String uemail=request.getParameter("email");
-		String uaddres=request.getParameter("addres");
+		String uaddres=request.getParameter("addre");
 
 		models.setId(uid);
 		models.setName(uname);
@@ -119,7 +119,7 @@ public class Process extends HttpServlet {
 		
 		out.print("<script type='text/javascript'>");
 		
-		out.print(" window.location='http://localhost:8091/CRUD_UsingTDD/index.jsp'");
+		out.print(" window.location='http://localhost:8080/CRUD_UsingTDD/index.jsp'");
 		
 		out.print("</script>");
 		

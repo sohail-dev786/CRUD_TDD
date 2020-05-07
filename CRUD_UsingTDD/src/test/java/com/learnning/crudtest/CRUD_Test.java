@@ -8,6 +8,7 @@ import java.util.List;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.learnning.crudtest.DB_Connection.DB_Connection;
 import com.learnning.crudtest.models.UserModels;
 import com.learnning.service.IDAO;
 
@@ -24,7 +25,7 @@ public class CRUD_Test {
 	}
 	
 	
-	
+	@Ignore
 	@Test
 	public void testInsertValues()
 	{
@@ -54,7 +55,7 @@ public class CRUD_Test {
 		
 	}
 	
-	@Ignore
+	
 	@Test
 	public void testRecords()
 	{

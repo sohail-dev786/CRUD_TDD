@@ -1,6 +1,7 @@
 
+<%@page import="com.learnning.crudtest.DB_Connection.DB_Connection"%>
 <%@page import="com.learnning.crudtest.models.UserModels"%>
-<%@page import="com.learnning.crudtest.DB_Connection"%>
+
 <%@page import="com.learnning.service.IDAO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -130,6 +131,7 @@ text-transform:uppercase;
     
 	<a href="editById.jsp?userId=<%=userId%>" class="btn btn-warning btn-lg btn-hover viewedit">Edit</a>
 	<a href="deleteByID.jsp?userId=<%=userId %>" class="btn btn-danger btn-lg viewdelete">Delete</a>
+  	
   </div>
 </div>
 </div>
