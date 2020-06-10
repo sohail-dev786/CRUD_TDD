@@ -18,6 +18,7 @@ public class DB_Connection implements IDAO {
 	UserModels model;
 	PreparedStatement stmt;
 	Statement cstmt;
+	
 	public boolean getConnected() {
 		try {
 			Class.forName("org.h2.Driver");
@@ -217,10 +218,11 @@ public class DB_Connection implements IDAO {
 				//model=new UserModels();
 				PreparedStatement preparestmt = conn.prepareStatement(query);
 			
-				preparestmt.setInt(1, model.getId());
-				preparestmt.setString(2, model.getName());
-				preparestmt.setString(3, model.getEmail());
-				preparestmt.setString(4, model.getAddre());
+				
+				preparestmt.setString(1, model.getName());
+				preparestmt.setString(2, model.getEmail());
+				preparestmt.setString(3, model.getAddre());
+				preparestmt.setInt(4, model.getId());
 				
 			
 			/*	or we can assing in a variable

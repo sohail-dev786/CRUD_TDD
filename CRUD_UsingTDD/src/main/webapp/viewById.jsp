@@ -130,11 +130,31 @@ text-transform:uppercase;
     </p>
     
 	<a href="editById.jsp?userId=<%=userId%>" class="btn btn-warning btn-lg btn-hover viewedit">Edit</a>
-	<a href="deleteByID.jsp?userId=<%=userId %>" class="btn btn-danger btn-lg viewdelete">Delete</a>
+	<a href="#" onclick="askConfirm('<%=model.getId()%>','<%=model.getName()%>')" class="btn btn-danger btn-lg viewdelete">Delete</a>
   	
   </div>
 </div>
 </div>
 </center>
+
+
+<script type="text/javascript" rel="javascript">
+	function askConfirm(userId,userNm)
+	{
+				
+				var response=confirm("DO YOU WANT TO DELETE RECORD OF :\t "+userNm+"!!!!");
+					if(response)
+						{
+						
+						window.location="http://localhost:8080/CRUD_UsingTDD/deleteById.jsp?userId="+userId;
+						}
+	
+	}
+	
+	</script>
+
+
+
+
 </body>
 </html>

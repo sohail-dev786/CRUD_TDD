@@ -96,7 +96,7 @@ font-size:40px;
 	<center>
 <button class="btn btn-dark add"><a href='Register.jsp'><span id="plus">+</span>ADD NEW</a></button>
 	</center>
-	<br />
+	<br/>
 	<div class="container ">
 	<table class="table table-dark ">
 		<thead class=" theadcss">
